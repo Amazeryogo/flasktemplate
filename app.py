@@ -8,4 +8,4 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-waitress.run(app, host='0.0.0.0',port=5000)
+waitress.serve(app, host='0.0.0.0',port=5000)
